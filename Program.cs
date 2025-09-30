@@ -7,9 +7,9 @@ namespace Topic_4_Asignment
     {
         static void Main(string[] args)
         {
-            //String name;
-            //int age;
-            //Double money;
+            String name;
+            int age;
+            Double money;
 
             //Console.WriteLine("Hello what is your name?");
             //name = Console.ReadLine();
@@ -26,13 +26,68 @@ namespace Topic_4_Asignment
             int grade, idNumber;
             Double average;
 
-            firstName = Console.ReadLine();
-            lastName = Console.ReadLine();
-            int.TryParse(Console.ReadLine(), out grade);
-            int.TryParse(Console.ReadLine(), out idNumber);
-            Double.TryParse(Console.ReadLine(), out average);
+            //Console.WriteLine("First name:");
+            //firstName = Console.ReadLine();
+            //Console.WriteLine("Last name:");
+            //lastName = Console.ReadLine();
+            //Console.WriteLine("login:");
+            //login= Console.ReadLine();
+            //Console.WriteLine("Grade:");
+            //int.TryParse(Console.ReadLine(), out grade);
+            //Console.WriteLine("ID number:");
+            //int.TryParse(Console.ReadLine(), out idNumber);
+            //Console.WriteLine("Average:");
+            //Double.TryParse(Console.ReadLine(), out average);
+            //Console.WriteLine("Your information:");
 
-        login: Console.WriteLine("ID: /t/t");
+            //Console.WriteLine("\tLogin:\t" +     login);
+            //Console.WriteLine("\tID number:\t" + idNumber);
+            //Console.WriteLine("\tName:\t" +      firstName + lastName);
+            //Console.WriteLine("\tAverage:\t" +   average);
+            //Console.WriteLine("\tGrade:\t" +     grade);
+
+
+
+            //Console.WriteLine("Hello. What is your name?");
+            //name = Console.ReadLine();
+            //Console.WriteLine("Hi " + name + ("!") + ("How old are you?"));
+            //int.TryParse(Console.ReadLine(), out age);
+            //Console.WriteLine("Did you know that in five years you will be " + (age + 5 ) + " years old? And five years ago you were "
+            //+ (age - 5) + ("!") + "Imagine that!");
+
+
+            string item1, item2;
+            double price1, price2, subTotal, discount, discountedPrice, tax, total;
+
+            Console.WriteLine("What is the first item you baught?");
+            item1 = Console.ReadLine();
+            Console.WriteLine("What is the price of the first item?");
+            Double.TryParse(Console.ReadLine(), out price1);
+
+            Console.WriteLine("What is the second item you baught?");
+            item2 = Console.ReadLine();
+            Console.WriteLine("What is the price of the second item?");
+            Double.TryParse(Console.ReadLine(), out price2);
+            subTotal = price1 + price2;
+            discount = subTotal * 0.2;
+            discountedPrice = subTotal - discount;
+            tax = discountedPrice * 0.13;
+            total= discountedPrice + tax;
+
+            Console.WriteLine("Sales Receipt");
+            Console.WriteLine();
+            Console.WriteLine(item1);
+            Console.WriteLine(price1);
+            Console.WriteLine(item2);
+            Console.WriteLine(price2);
+            Console.WriteLine("===============");
+            Console.WriteLine(subTotal);
+            Console.WriteLine(discount);
+            Console.WriteLine(discountedPrice);
+            Console.WriteLine(tax);
+            Console.WriteLine("================");
+            Console.WriteLine(total);
+
 
 
 
